@@ -1,0 +1,25 @@
+2024-02-12 08:01:48.408 +05:30 [INF] Now listening on: https://localhost:7095
+2024-02-12 08:01:48.431 +05:30 [INF] Now listening on: http://localhost:5165
+2024-02-12 08:01:48.442 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-12 08:01:48.444 +05:30 [INF] Hosting environment: Development
+2024-02-12 08:01:48.444 +05:30 [INF] Content root path: C:\Users\Samsung\Desktop\Study\MyBooks\
+2024-02-12 08:01:49.772 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/index.html - -
+2024-02-12 08:01:50.824 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7095/_vs/browserLink - -
+2024-02-12 08:01:50.824 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - -
+2024-02-12 08:01:50.868 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 37.8012ms
+2024-02-12 08:01:50.899 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/index.html - - - 200 - text/html;charset=utf-8 1136.4307ms
+2024-02-12 08:01:51.035 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7095/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 210.9180ms
+2024-02-12 08:01:51.110 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - -
+2024-02-12 08:01:51.395 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 284.1401ms
+2024-02-12 08:02:06.335 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7095/api/Publishers/get-all-publishers?sortBy=rg&searchString=Publishe3 - -
+2024-02-12 08:02:06.359 +05:30 [INF] Executing endpoint 'MyBooks.Controllers.PublishersController.GetAllpublishers (MyBooks)'
+2024-02-12 08:02:06.476 +05:30 [INF] Route matched with {action = "GetAllpublishers", controller = "Publishers"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllpublishers(System.String, System.String, Int32) on controller MyBooks.Controllers.PublishersController (MyBooks).
+2024-02-12 08:02:19.197 +05:30 [INF] Entity Framework Core 6.0.26 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.26' with options: None
+2024-02-12 08:02:21.602 +05:30 [INF] Executed DbCommand (124ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [Publishers] AS [p]
+ORDER BY [p].[Name]
+2024-02-12 08:02:30.336 +05:30 [INF] Executing OkObjectResult, writing value of type 'my_books.Data.Paging.PaginatedList`1[[MyBooks.Data.Models.Publisher, MyBooks, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-12 08:02:30.417 +05:30 [INF] Executed action MyBooks.Controllers.PublishersController.GetAllpublishers (MyBooks) in 23933.1359ms
+2024-02-12 08:02:30.419 +05:30 [INF] Executed endpoint 'MyBooks.Controllers.PublishersController.GetAllpublishers (MyBooks)'
+2024-02-12 08:02:30.436 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7095/api/Publishers/get-all-publishers?sortBy=rg&searchString=Publishe3 - - - 200 - application/json;+charset=utf-8 24100.6599ms

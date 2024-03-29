@@ -1,0 +1,11 @@
+02/12/2024 08:26:08 +05:30 [Information] - Message: this is  just a log in GetAllPublishers
+02/12/2024 11:36:03 +05:30 [Information] - Message: this is  just a log in GetAllPublishers
+02/12/2024 11:41:02 +05:30 [Information] - Message: this is  just a log in GetAllPublishers
+02/12/2024 12:24:05 +05:30 [Fatal] - Message: Application startup exception
+System.InvalidOperationException: An error occurred when configuring the exception handler middleware. Either the 'ExceptionHandlingPath' or the 'ExceptionHandler' property must be set in 'UseExceptionHandler()'. Alternatively, set one of the aforementioned properties in 'Startup.ConfigureServices' as follows: 'services.AddExceptionHandler(options => { ... });'.
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware..ctor(RequestDelegate next, ILoggerFactory loggerFactory, IOptions`1 options, DiagnosticListener diagnosticListener)
+   at Microsoft.AspNetCore.Builder.ExceptionHandlerExtensions.<>c__DisplayClass4_0.<SetExceptionHandlerMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.<ConfigureApplication>b__27_0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
